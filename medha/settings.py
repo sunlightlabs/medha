@@ -52,8 +52,8 @@ INSTALLED_APPS = (
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'serrano.middleware.SessionMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -118,7 +118,7 @@ STATICFILES_FINDERS = (
 )
 BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components/')
 BOWER_INSTALLED_APPS = (
-    "https://github.com/chop-dbhi/cilantro.git",
+    "https://github.com/chop-dbhi/cilantro.git#120f7e13",
 )
 
 try:
