@@ -1,0 +1,3 @@
+define(["./base","../core","./context","./view"],function(e,t,o,n){var s=e.Model.extend({}),r=e.StatsSupportedModel.extend({statModel:s,constructor:function(t,s){t=t||{},this.context=new o.Context({json:t.context_json}),this.view=new n.ViewModel({json:t.view_json}),e.Model.prototype.constructor.call(this,t,s)},parse:function(t,o){return t&&(t&&!t.shared_users&&(t.shared_users=[]),this.context.set({json:t.context_json}),this.view.set({json:t.view_json})),e.Model.prototype.parse.call(this,t,o)}}),i=e.Collection.extend({model:r});return{Query:r,Queries:i}});
+//# sourceMappingURL=query.js
+//# sourceMappingURL=query.js.map

@@ -1,6 +1,6 @@
 {% load static %}
 var require = {
-    baseUrl: "{% static 'cilantro/dist/js' %}"
+    baseUrl: "{% static 'cilantro/js' %}"
 },
 
 cilantro = {
