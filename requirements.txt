@@ -1,0 +1,7 @@
+Django==1.7.6
+-e git+https://github.com/influence-usa/python-opencivicdata-django.git@disclosures#egg=opencivicdata
+
+-e git+https://github.com/chop-dbhi/avocado.git#egg=avocado
+-e git+https://github.com/chop-dbhi/serrano.git#egg=serrano
+
+django-bower
